@@ -41,7 +41,6 @@ export const generateCarImageUrl = (car,angle)=>{
   url.searchParams.append('zoomType','fullscreen')
   url.searchParams.append('modelYear',`${year}`)
   url.searchParams.append('angle',`${angle}`)
-  console.log(url);
   return `${url}`
 
 
@@ -56,6 +55,5 @@ export const generateCarImageUrl = (car,angle)=>{
   
     // Set the specified search parameter to the given value
     const newPathname = `${window.location.pathname}?${searchParams.toString()}`;
-    console.log(newPathname);
     return newPathname;
   };
